@@ -1,0 +1,66 @@
+.calculator-main{
+    background-color:;
+    margin: 40px auto;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    width: 480px;
+    box-shadow: 0 14px 14px lightgray;
+}
+
+.calculator-display{
+    /* background-color: rgb(244, 244, 156); */
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    height: 120px;
+    padding: 10px;
+    margin: 8px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+    text-align: end;
+}
+
+.calculation{
+    
+}
+
+.calculator-keys{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 48px;
+    grid-gap: 16px 20px;
+}
+
+.btn-key{
+    text-align: center;
+    border-radius: 6px;
+    border: none;
+    font-size: 32px;
+    padding: 15px;
+    color:rgb(84, 81, 81);
+    box-shadow: 0 6px 6px rgb(169, 167, 167);
+}
+
+.btn-key-operator{
+    background-color: rgb(128, 234, 128);
+}
+
+.btn-key-operator:hover{
+    background-color: rgb(73, 148, 73);
+}
+
+
+.btn-key-operand:hover{
+    background-color: rgb(206, 189, 189);
+}
+
+.btn-key-equals{
+    background-color: greenyellow;
+}
+
+.btn-key-equals:hover{
+    background-color: rgb(119, 184, 23);
+}
