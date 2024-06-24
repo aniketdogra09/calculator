@@ -60,6 +60,14 @@ document.addEventListener("DOMContentLoaded",()=>{
                 }
             }
 
+            if(button.id === 'change-sign'){
+                if(currentInput){
+                    currentInput="-"+currentInput;
+                    display.textContent=currentInput;
+                    return;
+                }
+            }
+
             if(currentInput===''&&value==='.'){
                 // console.log("we are dealing with floating numbers!");
                 currentInput='0.';
