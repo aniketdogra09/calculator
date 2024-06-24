@@ -44,6 +44,22 @@ document.addEventListener("DOMContentLoaded",()=>{
                     }
                     return;
             }
+
+            if(button.id === 'backspace'){
+                currentInput=currentInput.slice(0,-1);
+                len=currentInput.length;
+                if(len == 0)
+                    {
+                    console.log("The display is empty because the len is ",len);
+                    display.textContent='0';
+                    return;
+                }
+                else{
+                display.textContent=currentInput;
+                return;
+                }
+            }
+
             if(currentInput===''&&value==='.'){
                 // console.log("we are dealing with floating numbers!");
                 currentInput='0.';
